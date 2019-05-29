@@ -1,0 +1,32 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "standard",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-native/all"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": "off",
+    "@typescript-eslint/explicit-member-accessibility": "warn",
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react-native/no-color-literals": "warn",
+    "react-native/no-inline-styles": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
